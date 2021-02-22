@@ -20,8 +20,21 @@ const Search = () => {
       setResults(data.query.search);
     };
 
-    searchWikipedia();
-  },[term])
+    if(term && !results.length) {
+      searchWikipedia();
+    } else {
+      const timeOutId = setTimeout(() => {
+        if(term) {
+          searchWikipedia();
+        }
+      }, 1000);
+  
+      return () => {
+        clearTimeout(timeOutId);
+      };
+    }
+  }, [term]);
+
 
   const renderedResults = results.map((result) => {
     return(
