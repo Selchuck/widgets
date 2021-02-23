@@ -39,8 +39,8 @@ const options = [
 export default () => {
   return (
     <div>
-      <Accordion items={items} />
-      <Search />
+      {/* <Accordion items={items} />
+      <Search /> */}
       <Dropdown options={options}/>
     </div>
   );
