@@ -7,12 +7,28 @@ const options = [
     value: 'af'
   },
   {
-    label: 'Arabic',
-    value: 'ar'
+    label: 'Bulgarian',
+    value: 'bg'
+  }, 
+  {
+    label: 'Chinese',
+    value: 'zh-TW'
   },
   {
     label: 'Hindi',
     value: 'hi'
+  },
+  {
+    label: 'German',
+    value: 'de'
+  },
+  {
+    label: 'Spanish',
+    value: 'es'
+  },
+  {
+    label: 'Turkce',
+    value: 'tr'
   }
 ];
 
