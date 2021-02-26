@@ -44,7 +44,8 @@ export default () => {
     <div>
       {/* <Accordion items={items} />
       <Search /> */}
-      {/* <Dropdown 
+      {/* <Dropdown
+        label="Select a Colour" 
         selected={selected}
         onSelectedChange={setSelected} 
         options={options}
